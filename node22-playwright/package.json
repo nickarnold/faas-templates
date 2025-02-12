@@ -1,0 +1,16 @@
+{
+  "name": "openfaas-node20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "City Labs, Inc",
+  "private": "true",
+  "dependencies": {
+    "body-parser": "^1.20",
+    "express": "^4.21"
+  }
+}
