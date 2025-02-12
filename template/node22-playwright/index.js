@@ -1,14 +1,12 @@
-"use strict"
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const express = require('express')
-const app = express()
 const handler = require('./function/handler');
-const bodyParser = require('body-parser')
 
-const defaultMaxSize = '100kb' // body-parser default
-
+const app = express();
 app.disable('x-powered-by');
 
+const defaultMaxSize = '100kb' // body-parser default
 const rawLimit = process.env.MAX_RAW_SIZE || defaultMaxSize
 const jsonLimit = process.env.MAX_JSON_SIZE || defaultMaxSize
 
@@ -134,7 +132,5 @@ app.options('/*', middleware);
 const port = process.env.http_port || 3000;
 
 app.listen(port, () => {
-    console.log(`node22 listening on port: ${port}`)
+    console.log(`node22 listening on port: ${port}`);
 });
-
-
