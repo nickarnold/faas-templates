@@ -1,8 +1,7 @@
-language: node22
+language: node22-playwright
 fprocess: node index.js
 welcome_message: |
   You have created a new function which uses Node.js 22 and the OpenFaaS
-  of-watchdog which gives greater control over HTTP responses.
+  of-watchdog which gives greater control over HTTP responses. 
 
-  npm i --save can be used to add third-party packages like request or cheerio
-  npm documentation: https://docs.npmjs.com/
+  `npm i --save` can be used to add deps.
